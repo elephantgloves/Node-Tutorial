@@ -2,6 +2,11 @@
 <html>
 <head>
   <title>Node database tutorial</title>
+  <script>
+  function thankuser(){
+    document.getElementById("login").innerHTML= "Thank you for making my database one record longer :D "
+  }
+  </script>
 </head>
 <body>
   <form class="Login">
@@ -14,7 +19,8 @@
     <h1>Create account</h1>
     <input type="text" class="username" placeholder="username">
     <input type="password" class="password" placeholder="password">
-    <input type="submit" value="Create">
+    <input type="submit" value="Create" onclick="thankuser()">
+    <h4 id = "login"></h4>
   </form>
   <script src="/app.js"></script>
 </body>
